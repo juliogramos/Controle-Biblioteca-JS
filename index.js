@@ -1,20 +1,10 @@
-import { dadosLivros, converterLivros } from "./dadosLivros.js";
-
-// Isso é só para testar o funcionamento de funções
-function testeConversaoDeLivros() {
-    console.log(dadosLivros);
-    converterLivros();
-    console.log(dadosLivros);
-
-    // Confirmando que os objetos realmente ganharam os métodos
-    // já que eles não aparecem quando printa no console
-    console.log(dadosLivros[0].getAutor());
-}
+import { converterLivros } from "./dadosLivros.js";
 
 // Essa vai ser a função com o loop principal do programa
-// Vazia por enquanto até implementar o menu
-function main() {}
+function main() {
+    // Essa função deve ser executada primeiro
+    // para converter os dados iniciais para a classe Livro
+    converterLivros();
+}
 
 // main()
-
-testeConversaoDeLivros();
