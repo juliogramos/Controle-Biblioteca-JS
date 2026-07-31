@@ -1,4 +1,6 @@
-const dadosLivros = [
+import { Livro } from "./Livro";
+
+export const dadosLivros = [
     {
         titulo: "JavaScript para Iniciantes",
         autor: "Ana Souza",
@@ -70,3 +72,18 @@ const dadosLivros = [
         disponivel: true,
     },
 ];
+
+// Essa função converte os objetos de livros para a classe Livro
+// Deve ser chamada só uma vez no index.js antes de entrar no loop principal
+export function converterLivros() {
+    for (let i = 0; i < dadosLivros.length; i++) {
+        let livro = dadosLivros[i];
+        let novoLivro = new Livro(
+            livro.titulo,
+            livro.autor,
+            livro.categoria,
+            livro.paginas,
+            livro.disponivel,
+        );
+    }
+}
