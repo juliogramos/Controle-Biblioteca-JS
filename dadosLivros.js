@@ -1,4 +1,4 @@
-import { Livro } from "./Livro";
+import { Livro } from "./Livro.js";
 
 export const dadosLivros = [
     {
@@ -85,5 +85,6 @@ export function converterLivros() {
             livro.paginas,
             livro.disponivel,
         );
+        dadosLivros[i] = novoLivro;
     }
 }
