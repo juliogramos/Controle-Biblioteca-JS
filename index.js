@@ -11,4 +11,10 @@ function testeConversaoDeLivros() {
     console.log(dadosLivros[0].getAutor());
 }
 
-teste();
+// Essa vai ser a função com o loop principal do programa
+// Vazia por enquanto até implementar o menu
+function main() {}
+
+// main()
+
+testeConversaoDeLivros();

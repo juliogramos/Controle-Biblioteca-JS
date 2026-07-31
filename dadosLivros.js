@@ -1,5 +1,7 @@
 import { Livro } from "./Livro.js";
 
+// Pode importar esse dadosLivros em qualquer parte do código
+// Só verificar se eles estão convertidos primeiro (função abaixo desse array)
 export const dadosLivros = [
     {
         titulo: "JavaScript para Iniciantes",
