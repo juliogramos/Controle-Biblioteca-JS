@@ -1,6 +1,6 @@
 import { dadosLivros } from "./dadosLivros.js";
 
-function realizarEmprestimo(titulo) {
+export function realizarEmprestimo(titulo) {
     const livro = dadosLivros.find(
         (livro) => livro.titulo == titulo.toUpperCase(),
     );
