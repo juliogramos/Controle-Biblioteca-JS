@@ -1,7 +1,9 @@
 import { dadosLivros } from "./dadosLivros.js";
 
 function realizarEmprestimo(titulo) {
-    const livro = dadosLivros.find((livro) => livro.titulo == titulo);
+    const livro = dadosLivros.find(
+        (livro) => livro.titulo == titulo.toUpperCase(),
+    );
     if (livro == undefined || livro.disponivel == false) {
         console.log("Livro indisponível!");
     } else {
