@@ -2,12 +2,12 @@ import { dadosLivros } from "./dadosLivros.js";
 
 export function realizarEmprestimo(titulo) {
     const livro = dadosLivros.find(
-        (livro) => livro.titulo == titulo.toUpperCase(),
+        (livro) => livro.getTitulo() == titulo.toUpperCase(),
     );
-    if (livro == undefined || livro.disponivel == false) {
+    if (livro == undefined || livro.getDisponivel() == false) {
         console.log("Livro indisponível!");
     } else {
-        livro.disponivel = false;
+        livro.setDisponivel(false);
         console.log("Livro emprestado com sucesso!");
     }
 }
