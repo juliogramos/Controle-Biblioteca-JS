@@ -37,4 +37,9 @@ export class Livro {
     setDisponivel(novaDisponibilidade) {
         this.#disponivel = novaDisponibilidade;
     }
+
+    // Retorna tudo já separado em linhas diferentes
+    getInfo() {
+        return `Título: ${this.#titulo}\nAutor: ${this.#autor}\nCategoria: ${this.#categoria}\nPáginas: ${this.#paginas}\nDisponibilidade: ${this.#disponivel ? "Disponível" : "Não Disponível"}`;
+    }
 }
