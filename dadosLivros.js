@@ -73,20 +73,16 @@ export const dadosLivros = [
         paginas: 390,
         disponivel: true,
     },
-];
+].map((dadoInicial) => {
+    return new Livro(
+        dadoInicial.titulo,
+        dadoInicial.autor,
+        dadoInicial.categoria,
+        dadoInicial.paginas,
+        dadoInicial.disponivel,
+    );
+});
 
-// Essa função converte os objetos de livros para a classe Livro
-// Deve ser chamada só uma vez no index.js antes de entrar no loop principal
-export function converterLivros() {
-    for (let i = 0; i < dadosLivros.length; i++) {
-        let livro = dadosLivros[i];
-        let novoLivro = new Livro(
-            livro.titulo,
-            livro.autor,
-            livro.categoria,
-            livro.paginas,
-            livro.disponivel,
-        );
-        dadosLivros[i] = novoLivro;
-    }
-}
+// A conversão para Livro é feita diretamente aqui na declaração do dadosLivros
+// Achei mais conveniente, para não ter que ficar convertendo com uma função
+// separada toda hora.
