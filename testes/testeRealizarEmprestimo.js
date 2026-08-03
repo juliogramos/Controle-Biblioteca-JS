@@ -1,10 +1,7 @@
-import { dadosLivros, converterLivros } from "../dadosLivros.js";
+import { dadosLivros } from "../dadosLivros.js";
 import { realizarEmprestimo } from "../realizarEmprestimo.js";
 
 function testeRealizarEmprestimo() {
-    // Conversão inicial
-    converterLivros();
-
     // Mostra livros disponíveis inicialmente
     dadosLivros.forEach((livro) => {
         console.log(livro.getInfo(), "\n");
