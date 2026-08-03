@@ -1,10 +1,7 @@
-import { dadosLivros, converterLivros } from "../dadosLivros.js";
+import { dadosLivros } from "../dadosLivros.js";
 import { realizarDevolucao } from "../realizarDevolucao.js";
 
 function testeRealizarDevolucao() {
-    // Conversão inicial
-    converterLivros();
-
     // Mostra livros disponíveis inicialmente
     dadosLivros.forEach((livro) => {
         console.log(livro.getInfo(), "\n");
