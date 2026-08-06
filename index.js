@@ -2,14 +2,12 @@ import PromptSync from "prompt-sync";
 import { listarLivros } from "./listarLivros.js";
 import { realizarEmprestimo } from "./realizarEmprestimo.js";
 import { realizarDevolucao } from "./realizarDevolucao.js";
+import { buscarLivro } from "./buscarLivro.js";
 
 const prompt = PromptSync();
 
 // Funções de placeholder, serão removidas a medida que as funções de verdade
 // ficam prontas
-function buscarLivros() {
-    console.log("Opção buscar livros foi selecionada");
-}
 
 function listarDisponiveis() {
     console.log("Opção listar disponíveis foi selecionada");
@@ -52,7 +50,7 @@ do {
             break;
 
         case "2":
-            buscarLivros();
+            buscarLivro(prompt("Digite o título do livro a ser buscado: "));
             break;
 
         case "3":
@@ -65,13 +63,13 @@ do {
 
         case "5":
             realizarEmprestimo(
-                prompt("Digite o nome do livro a ser emprestado: "),
+                prompt("Digite o título do livro a ser emprestado: "),
             );
             break;
 
         case "6":
             realizarDevolucao(
-                prompt("Digite o nome do livro a ser devolvido: "),
+                prompt("Digite o título do livro a ser devolvido: "),
             );
             break;
 
