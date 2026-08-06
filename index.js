@@ -1,9 +1,7 @@
 import PromptSync from "prompt-sync";
-const prompt = PromptSync();
+import { listarLivros } from "./listarLivros.js";
 
-function listarLivros() {
-    console.log("Opção listar livros foi selecionada");
-}
+const prompt = PromptSync();
 
 function buscarLivros() {
     console.log("Opção buscar livros foi selecionada");
