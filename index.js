@@ -1,5 +1,6 @@
 import PromptSync from "prompt-sync";
 import { listarLivros } from "./listarLivros.js";
+import { realizarEmprestimo } from "./realizarEmprestimo.js";
 
 const prompt = PromptSync();
 
@@ -13,10 +14,6 @@ function listarDisponiveis() {
 
 function cadastrarLivros() {
     console.log("Opção cadastrar livros foi selecionada");
-}
-
-function realizarEmprestimo() {
-    console.log("Opção realizar empréstimo foi selecionada");
 }
 
 function realizarDevolucao() {
@@ -68,7 +65,8 @@ do {
             break;
 
         case "5":
-            realizarEmprestimo();
+            let titulo = prompt("Digite o nome do livro a ser emprestado: ");
+            realizarEmprestimo(titulo);
             break;
 
         case "6":
