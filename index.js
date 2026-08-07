@@ -3,15 +3,12 @@ import { listarLivros } from "./listarLivros.js";
 import { realizarEmprestimo } from "./realizarEmprestimo.js";
 import { realizarDevolucao } from "./realizarDevolucao.js";
 import { buscarLivro } from "./buscarLivro.js";
+import { listarDisponiveis } from "./listarDisponiveis.js";
 
 const prompt = PromptSync();
 
 // Funções de placeholder, serão removidas a medida que as funções de verdade
 // ficam prontas
-
-function listarDisponiveis() {
-    console.log("Opção listar disponíveis foi selecionada");
-}
 
 function cadastrarLivros() {
     console.log("Opção cadastrar livros foi selecionada");
