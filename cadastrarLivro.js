@@ -1,4 +1,4 @@
-import { dadosLivro, dadosLivros } from "./dadosLivros.js";
+import { dadosLivros } from "./dadosLivros.js";
 import { Livro } from "./Livro.js";
 import PromptSync from "prompt-sync";
 
