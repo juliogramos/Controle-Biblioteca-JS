@@ -3,6 +3,9 @@ import { dadosLivros } from "./dadosLivros.js"; //importando array com livros ca
 export function listarLivros() {
     //função para listar livros no console
 
+    // Espaçamento
+    console.log("\n");
+
     for (let i = 0; i < dadosLivros.length; i++) {
         //percorrendo os livros do array
 
