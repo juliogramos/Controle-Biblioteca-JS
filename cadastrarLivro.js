@@ -19,6 +19,9 @@ export function cadastrarLivro() {
     let categoria;
     let paginas;
 
+    // Espaçamento
+    console.log("\n");
+
     // Inserção do título
     // Deve ser tudo maiúsculo conforme o enunciado (e não vazio)
     do {
