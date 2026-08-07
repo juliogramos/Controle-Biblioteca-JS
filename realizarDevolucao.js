@@ -1,6 +1,9 @@
 import { dadosLivros } from "./dadosLivros.js";
 
 export function realizarDevolucao(titulo) {
+    // Espaçamento
+    console.log("\n");
+
     const livro = dadosLivros.find(
         (livro) => livro.getTitulo() == titulo.toUpperCase(),
     );
