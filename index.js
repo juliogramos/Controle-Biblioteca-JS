@@ -4,15 +4,12 @@ import { realizarEmprestimo } from "./realizarEmprestimo.js";
 import { realizarDevolucao } from "./realizarDevolucao.js";
 import { buscarLivro } from "./buscarLivro.js";
 import { listarDisponiveis } from "./listarDisponiveis.js";
+import { cadastrarLivro } from "./cadastrarLivro.js";
 
 const prompt = PromptSync();
 
 // Funções de placeholder, serão removidas a medida que as funções de verdade
 // ficam prontas
-
-function cadastrarLivros() {
-    console.log("Opção cadastrar livros foi selecionada");
-}
 
 function exibirEstatisticas() {
     console.log("Opção exibir estatísticas foi selecionada");
@@ -55,7 +52,7 @@ do {
             break;
 
         case "4":
-            cadastrarLivros();
+            cadastrarLivro();
             break;
 
         case "5":
