@@ -5,15 +5,9 @@ import { realizarDevolucao } from "./realizarDevolucao.js";
 import { buscarLivro } from "./buscarLivro.js";
 import { listarDisponiveis } from "./listarDisponiveis.js";
 import { cadastrarLivro } from "./cadastrarLivro.js";
+import { exibirEstatisticas } from "./exibirEstatisticas.js";
 
 const prompt = PromptSync();
-
-// Funções de placeholder, serão removidas a medida que as funções de verdade
-// ficam prontas
-
-function exibirEstatisticas() {
-    console.log("Opção exibir estatísticas foi selecionada");
-}
 
 function sair() {
     console.log("Opção sair foi selecionada");
